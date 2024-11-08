@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <AssemblyName>Without.Systems.CloudFrontSigner.Library</AssemblyName>
+        <RootNamespace>Without.Systems.CloudFrontSigner</RootNamespace>
+        <LangVersion>12</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="AWSSDK.CloudFront" Version="3.7.400.46" />
+        <PackageReference Include="OutSystems.ExternalLibraries.SDK" Version="1.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\CloudFront.png" />
+      <EmbeddedResource Include="Resources\CloudFront.png" />
+    </ItemGroup>
+
+</Project>
